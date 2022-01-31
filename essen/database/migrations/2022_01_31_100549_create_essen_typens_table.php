@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateEssensTable extends Migration
+class CreateEssenTypensTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class CreateEssensTable extends Migration
      */
     public function up()
     {
-        Schema::create('essens', function (Blueprint $table) {
-            $table->id();
+        Schema::create('essen_typens', function (Blueprint $table) {
+            $table->id('id');
+            $table->string('name');
             $table->timestamps();
         });
     }
@@ -26,6 +27,6 @@ class CreateEssensTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('essens');
+        Schema::dropIfExists('essen_typens');
     }
 }
