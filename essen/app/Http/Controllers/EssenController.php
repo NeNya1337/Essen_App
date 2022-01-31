@@ -61,7 +61,10 @@ class EssenController extends Controller
      */
     public function show($id)
     {
-        //
+        $essen =  Essen::where('id', $id)->first();
+        $typ = EssenTypen::where('id', $essen->essen_typen_id)->first();
+//        dd($typ);
+        return view('essen.show', ['essen' => $essen, 'typ' => $typ]);
     }
 
     /**
@@ -96,5 +99,23 @@ class EssenController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function meal(){
+        $fleisch = Essen::all()
+            ->where('essen_typen_id','1');
+        $beilage = Essen::all()
+            ->where('essen_typen_id','3');
+        $saettigung = Essen::all()
+            ->where('essen_typen_id','4');
+
+        //dd($fleisch->get(0));
+
+        $zufallsfleisch = $fleisch->random();
+        $zufallsbeilage = $beilage->random();
+        $zufallssaettigung = $saettigung->random();
+
+        return view('mahlzeit', ['fleisch' =>$zufallsfleisch, 'saettigung' => $zufallssaettigung, 'beilage' => $zufallsbeilage]);
+
     }
 }

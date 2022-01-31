@@ -17,5 +17,6 @@ use App\Http\Controllers\EssenController;
 Route::get('/', function () {
     return view('app');
 });
+Route::get('/mahlzeit', [EssenController::class, 'meal']);
 
 Route::resource('/essen', EssenController::class);
