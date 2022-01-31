@@ -5,7 +5,7 @@
     <div class="m-auto w-4/5 py-24">
         <div class="text-center">
             <h1 class="text-5xl uppercase bold">
-                Add new ship
+                Neues Essen hinzufügen
             </h1>
         </div>
     </div>
@@ -27,6 +27,13 @@
                     type="text"
                     name="essen_typen_id"
                     placeholder="Typ...">
+                <select
+                    class="block shadow-5xl mb-10 p-2 w-80 italic placeholder-gray-400"
+                    name="typ">
+                    @foreach($essenTypen as $essenTyp)
+                        <option value="{{ $essenTyp->id }}">{{ $essenTyp->name }}</option>
+                    @endforeach
+                </select>
                 <input
                     class="block shadow-5xl mb-10 p-2 w-80 italic placeholder-gray-400"
                     type="text"

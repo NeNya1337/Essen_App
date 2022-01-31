@@ -34,7 +34,7 @@ class EssenController extends Controller
     {
         $essenTypen = EssenTypen::all();
         //dd($essenTypen);
-        return view('essen.create', ['essen_typen', $essenTypen]);
+        return view('essen.create', ['essenTypen' => $essenTypen]);
     }
 
     /**

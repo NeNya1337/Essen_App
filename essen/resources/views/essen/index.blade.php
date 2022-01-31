@@ -7,7 +7,10 @@
             <h1 class=" text-5xl bold"> Essen </h1>
         </div>
     </div>
-    <div class="pt-10">
+    <div class="m-auto w-1/2 pt-10 text-center flex justify-evenly">
+        <a href="/" class="border-b-2 pb-2 border-dotted italic text-gray-500">
+            &larr; Zurück zur Übersicht
+        </a>
         <a href="/essen/create" class="border-b-2 pb-2 border-dotted italic text-gray-500">
             Neues Essen hinzufügen &plus;
         </a>
