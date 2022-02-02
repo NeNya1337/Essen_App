@@ -14,6 +14,7 @@ weitere mögliche Features:
 
 
 TODOS:
+* back button von Mahlzeiten
 * Entgegennahme von select für Zutaten-Art
 * viel input
 * eventuell json/csv Import ermöglichen ?

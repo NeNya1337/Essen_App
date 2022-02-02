@@ -22,14 +22,9 @@
                     type="text"
                     name="name"
                     placeholder="Essen...">
-                <input
-                    class="block shadow-5xl mb-10 p-2 w-80 italic placeholder-gray-400"
-                    type="text"
-                    name="essen_typen_id"
-                    placeholder="Typ...">
                 <select
                     class="block shadow-5xl mb-10 p-2 w-80 italic placeholder-gray-400"
-                    name="typ">
+                    name="essen_typen_id">
                     @foreach($essenTypen as $essenTyp)
                         <option value="{{ $essenTyp->id }}">{{ $essenTyp->name }}</option>
                     @endforeach
