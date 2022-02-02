@@ -14,6 +14,7 @@ weitere mögliche Features:
 
 
 TODOS:
+* Entgegennahme von select für Zutaten-Art
 * viel input
 * eventuell json/csv Import ermöglichen ?
 * Komplettmahlzeiten/Zubereitetes Kombinationen:
