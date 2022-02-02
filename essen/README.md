@@ -14,7 +14,7 @@ weitere mögliche Features:
 
 
 TODOS:
-* arbeiten mit issues
+* weiter arbeiten mit issues
 * eventuell Anmerkung zu Speisen (später nur im Tooltip z.b.)
 * back button von Mahlzeiten
 * Entgegennahme von select für Zutaten-Art
